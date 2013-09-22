@@ -1,0 +1,6 @@
+
+DirectoryIndex /_httperrors/403.html
+
+RewriteEngine On
+RewriteRule ^userauth/(.*)$ hub.php?r=verify_user&f=text&uuid=$1 [L]
+RewriteRule ^siteauth/(.*)$ hub.php?r=verify_site&f=text&uuid=$1 [L]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head>
+	<!--<link rel="stylesheet" href="../cdn/frontend-css/pinup.css">-->
+	<link rel="stylesheet" href="../build/css/base.css">
+	<!--<script src="../cdn/frontend-js/pinup.dev.js"></script>-->
+	<script src="../build/js/source/prefs.js"></script>
+	<script src="../build/js/source/lib.js"></script>
+	<script src="../build/js/source/layout.js"></script>
+	<script src="../build/js/source/methods.js"></script>
+	<script src="../build/js/source/ui.js"></script>
+	<script src="../build/js/source/instance.js"></script>
+	<script src="../build/js/source/main.js"></script>
+	<script>
+		Pinup("b7b7f57e-4961-11e2-b001-000c29e620fe", {
+			onReady: function () {
+				var pinup = this;
+				pinup.lib.click(document.getElementById("pinLogin"), function () {
+					pinup.fn.promptLogin();
+					document.forms['PIN_loginForm'].elements['strUsername'].value = "demo@mail.com";
+					document.forms['PIN_loginForm'].elements['strPassword'].value = "123";
+				});
+			},
+			custom: {
+				img2: {
+					allowBottomLinks: true,
+					tooltipOrientation: 'right'
+				}
+			}
+		});
+	</script>
+	<style>
+		img { float:left; }
+	</style>
+</head><body>
+	<div>
+		<img src="starbucks-christmas.jpg" alt="Starbucks Christmas Coffee" width="40%" />
+		<img id="img2" src="maureen-and-malorie.jpg" alt="Fashion on Display Maureen and Malorie" width="40%" />
+	</div>
+	<button id="pinLogin">LOGIN</button>
+</body></html>
