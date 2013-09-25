@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html><head>
 	<link rel="stylesheet" href="cdn/frontend-css/pinup.css">
-	<script src="cdn/frontend-js/pinup.dev.js"></script>
+	<script src="cdn/frontend-js/pinup.js"></script>
 	<script>
 		Pinup("b7b7f57e-4961-11e2-b001-000c29e620fe", {
+			loadAll: true,
+			allowBottomLinks: true,
 			onReady: function () {
 				var pinup = this;
 				pinup.lib.click(document.getElementById("pinLogin"), function () {
@@ -42,6 +44,7 @@
 		.button-wrapper button:hover { text-decoration:none !important; }
 
 	</style>
+	<script src="http://localhost:35729/livereload.js"></script>
 </head><body>
 	<div class="content-wrapper">
 		<h1>Pinup JS</h1>
