@@ -1,0 +1,14 @@
+{
+	"globals"		: {},
+	"bitwise"		: false,
+	"curly"			: true,
+	"eqeqeq"		: true,
+	"indent"		: 4,
+	"latedef"		: true,
+	"newcap"		: true,
+	"noempty"		: true,
+	"plusplus"		: false,
+	"unused"		: true,
+	"devel"			: true,
+	"jquery"		: true
+}
