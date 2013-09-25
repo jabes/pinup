@@ -12,7 +12,7 @@ $tagData = array();
 foreach ($HUB_REQUIRED_PARAMS as $k) $tagData[$k] = strip_tags($urldata[$k]);
 
 $queryHandle = new Query('select');
-$queryString = "SELECT COUNT(*) FROM tags WHERE strIpAddress = '%s' AND strTimestamp >= DATE_ADD(now(), INTERVAL -1 %s)";
+$queryString = "SELECT COUNT(*) FROM tags WHERE strIpAddress = '%s' AND dateCreated >= DATE_ADD(now(), INTERVAL -1 %s)";
 
 // DO SOME VALIDATIONS
 if (!Util::remoteFileExists($tagData['strWebLink'])) Util::quit("LINK TO WEBSITE IS NOT VALID");
@@ -47,8 +47,10 @@ if (!Query::insert("tags", array(
 	'nSitesID' => $arrSiteData['id'],
 	'nTaggerAccountsID' => $arrUser['id'],
 	'strGUID' => Query::sqlfn_uuid,
+	'dateCreated' => Query::sqlfn_now,
 	'strIpAddress' => $HUB_USER_IP,
-	'nUserAgentsID' => User::insertAgent($HUB_USER_AGENT)
+	'nUserAgentsID' => User::insertAgent($HUB_USER_AGENT),
+	'bApproved' => true
 ))) throw new QueryException("Failed to insert tag record for an unknown reason");
 
 

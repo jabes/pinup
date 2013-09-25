@@ -136,7 +136,7 @@ if (isset($urldata['strImageURL'])) {
 			AND (tags.nSitesID=" . $arrSiteData['id'] . " OR sa.nAliasSitesID=" . $arrSiteData['id'] . ")
 			AND tags.bApproved=1
 			AND tags.bDeleted=0
-			ORDER BY tags.strTimestamp DESC
+			ORDER BY tags.dateCreated DESC
 		")->cache("getTags.single_{$strImageHash}", "1week")->selectMulti();
 		
 	} else throw new Exception("Failed to create hash of image file stream");
@@ -202,7 +202,7 @@ if (isset($urldata['strImageURL'])) {
 			AND (tags.nSitesID=" . $arrSiteData['id'] . " OR sa.nAliasSitesID=" . $arrSiteData['id'] . ")
 			AND bApproved=1
 			AND bDeleted=0
-			ORDER BY tags.strTimestamp DESC
+			ORDER BY tags.dateCreated DESC
 		")->cache("getTags.multiple_" . md5(serialize($hashes)), "1week")->selectMulti("strImagePath");
 
 		

@@ -57,26 +57,26 @@ class User
 		else if (!filter_var($ipAddr, FILTER_VALIDATE_IP)) $err = "IP ADDRESS IS NOT VALID";
 		else if ($strPassword != $strPassConfirm) $err = "YOUR PASSWORD CONFIRMATION DID NOT MATCH";
 		else if ($sqlSelect->run("SELECT id FROM accounts WHERE strEmail='{$strEmail}'")) $err = "EMAIL/USERNAME ALREADY EXISTS";
-		else {
-			$blocked = $sqlSelect->run("
-				SELECT * FROM blockedregistrations 
-				WHERE strEmail='{$strEmail}' 
-				OR strIpAddress='{$ipAddr}'
-			");
-			if (!$blocked) {
-				$xml_string = Util::fileGetContents("http://www.stopforumspam.com/api", array('ip' => $ipAddr, 'email' => $strEmail));
-				if ($xml_string) $xml = new SimpleXMLElement($xml_string);
-				if (!$xml) $err = "SPAM CHECK FAILED";
-				else foreach ($xml->appears as $appears) if ($appears == "yes") {
-					$blocked = true;
-					Query::insert("blockedregistrations", array(
-						'strEmail' => $strEmail,
-						'strIpAddress' => $ipAddr
-					));
-				}
-			}
-			if ($blocked) $err = "YOUR EMAIL OR IP IS BLOCKED";
-		}
+		// else {
+		// 	$blocked = $sqlSelect->run("
+		// 		SELECT * FROM blockedregistrations 
+		// 		WHERE strEmail='{$strEmail}' 
+		// 		OR strIpAddress='{$ipAddr}'
+		// 	");
+		// 	if (!$blocked) {
+		// 		$xml_string = Util::fileGetContents("http://www.stopforumspam.com/api", array('ip' => $ipAddr, 'email' => $strEmail));
+		// 		if ($xml_string) $xml = new SimpleXMLElement($xml_string);
+		// 		if (!$xml) $err = "SPAM CHECK FAILED";
+		// 		else foreach ($xml->appears as $appears) if ($appears == "yes") {
+		// 			$blocked = true;
+		// 			Query::insert("blockedregistrations", array(
+		// 				'strEmail' => $strEmail,
+		// 				'strIpAddress' => $ipAddr
+		// 			));
+		// 		}
+		// 	}
+		// 	if ($blocked) $err = "YOUR EMAIL OR IP IS BLOCKED";
+		// }
 		
 		if (isset($err)) return $err;
 

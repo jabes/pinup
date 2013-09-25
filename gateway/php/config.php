@@ -7,20 +7,26 @@ define('SYS_FQDN', "www." . SYS_DOMAIN); # reliant domain name used within syste
 define('SYS_HTTP_PORT', 80);
 define('SYS_MYSQL_PORT', 3306);
 define('SYS_WEBURL', "http://" . SYS_FQDN . ":" . SYS_HTTP_PORT . "/work/pinup/gateway"); # reliant web url (backend: used in system connections)
-define('SYS_AGENT', "Niobe/" . SYS_NAME . "/Hub/v-" . SYS_VERSION);
-define('SYS_POSTMASTER_EMAIL', "justinbull@live.ca");
+define('SYS_AGENT', "JabesNet/" . SYS_NAME . "/Hub/v-" . SYS_VERSION);
+define('SYS_POSTMASTER_EMAIL', "bull.justin@gmail.com");
 
-define("DOCUMENT_ROOT", "/home/jbull/public_html/work/pinup/gateway");
+define("DOCUMENT_ROOT", "/home/justin/Sites/jbull/work/pinup/gateway");
 define("HUB_FILE_LOCATION", DOCUMENT_ROOT . "/php_frontend/%s.php");
 define("CLASS_FILE_LOCATION", DOCUMENT_ROOT . "/php/classes/%s.class.php");
 
 define("DEVMODE", false); # warning: if true, frontend will stop working
 define("ALLOW_MEMCACHE", false);
 
-define('MYSQL_HOST', SYS_FQDN . ":" . SYS_MYSQL_PORT);
-define('MYSQL_USER', "projects_jbull");
-define('MYSQL_PASS', "X!*B&59AvBS!bxuv");
-define('MYSQL_DB', "projects_jbull_pinup");
+// define('MYSQL_HOST', SYS_FQDN . ":" . SYS_MYSQL_PORT);
+// define('MYSQL_USER', "root");
+// define('MYSQL_PASS', "htPtYMSoq9Sp");
+// define('MYSQL_DB', "pinup");
+
+define('MYSQL_HOST', "127.0.0.1");
+define('MYSQL_USER', "root");
+define('MYSQL_PASS', "root");
+define('MYSQL_DB', "pinup");
+
 
 define('MAINSITE_URL', "http://" . SYS_FQDN . ":" . SYS_HTTP_PORT . "/work/pinup"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
