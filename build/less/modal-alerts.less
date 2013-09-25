@@ -1,0 +1,52 @@
+#PIN_active {
+	.PIN_modalMsg { 
+		
+		padding: 0 50px;
+		
+		* {
+			text-align: center;
+		}
+
+		h2 {
+			color: @brand-primary;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+
+		a {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		p {
+			&,
+			* {
+				color: @brand-window-text;
+				font-size: 14px;
+			}
+			* {
+				display: inline;
+			}
+		}
+
+		ol {
+			margin-bottom: 20px;
+			li {
+				display: list-item;
+				list-style: decimal inside;
+				color: darken(@brand-window-text, 15%);
+				font-size: 12px;
+			}
+		}
+
+		.PIN_logo {
+			width: 86px;
+			height: 24px;
+			margin: 50px auto 20px auto;
+			text-indent: -999px;
+			overflow: hidden;
+			background-position: 0 -74px;
+		}
+
+	}
+}

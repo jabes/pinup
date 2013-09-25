@@ -1,0 +1,63 @@
+#PIN_active {
+	.PIN_node {
+		
+		&.PIN_taggingMode {
+			
+			.PIN_overlay {
+				
+				visibility: visible;
+				top: 0;
+				left: 0;
+				
+				.PIN_tagHolder {
+
+					cursor: crosshair;
+					background: data-uri("../../cdn/global-images/transparent-ieFix.gif") 0 0 repeat;
+					
+					.PIN_tagBubble {
+						display: none;
+					}
+					
+					.PIN_tag {
+						.PIN_tagDot {
+							.opacity(0.70);
+							&:hover {
+								.opacity(1);
+							}
+						}					
+					}
+				}
+			}
+		}
+
+		&.PIN_repositionMode,
+		&.PIN_removalMode {
+			.PIN_overlay {
+				visibility: visible;
+				top: 0;
+				left: 0;
+			}
+			.PIN_tagHolder {
+				cursor: default;
+				.PIN_tagBubble {
+					display: none;
+				}
+			}
+		}
+		
+		&.PIN_handOver * {
+			cursor: hand !important;
+			cursor: grab !important;
+			cursor: -moz-grab !important;
+			cursor: -webkit-grab !important;
+			cursor: data-uri("../../cdn/global-images/openhand.cur"), default !important;
+		}
+		
+		&.PIN_handDrag * {
+			cursor: grabbing !important;
+			cursor: -moz-grabbing !important;
+			cursor: -webkit-grabbing !important;
+			cursor: data-uri("../../cdn/global-images/closedhand.cur"), default !important;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+#PIN_active { 
+	
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	
+	.PIN_wrapper,
+	.PIN_node {
+		
+		&,
+		* {
+			display: block;
+			visibility: visible;
+			margin: 0;
+			padding: 0;
+			width: auto;
+			height: auto;
+			min-width: 0;
+			min-height: 0;
+			max-width: none;
+			max-height: none;
+			position: relative;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			left: auto;
+			font-size: 11px;
+			font-weight: normal;
+			font-family: "arial", sans-serif;
+			font-variant: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			vertical-align: baseline;
+			word-spacing: normal;
+			word-wrap: normal;
+			text-decoration: none;
+			text-transform: none;
+			text-align: left;
+			text-indent: 0;
+			text-shadow: none;
+			outline: none;
+			float: none;
+			clear: none;
+			cursor: default;
+			background: none;
+			border: none;
+			white-space: normal;
+			overflow: visible;
+			direction: ltr;
+			z-index: auto;
+			color: @brand-text;
+			zoom: normal;
+		}
+
+		strong {
+			&,
+			* {
+				display: inline;
+				font-weight: bold;
+			}
+		}
+
+		em {
+			&,
+			* {
+				display: inline;
+				font-style: italic;
+			}
+		}
+	}
+	
+	.PIN_logo,
+	.PIN_btnBotL,
+	.PIN_tagDot,
+	.PIN_tagLinkLike,
+	.PIN_formBtnSubmit span,
+	.PIN_windowBtnClose,
+	.PIN_windowLogout,
+	.PIN_btnCancel,
+	.PIN_btnSettings,
+	.PIN_iconLabel,
+	.PIN_shareButton,
+	.PIN_lightboxNavIcon {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-image: data-uri("../../cdn/frontend-themes/resources/grfx_default.png");
+	}
+}

@@ -1,0 +1,90 @@
+#PIN_active {
+	
+	.PIN_lightbox {
+		
+		z-index: 8888;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		
+		.PIN_lightboxImageHolder {
+			&,
+			* {
+				max-width: 800px;
+				max-height: 600px;
+			}
+		}
+		
+		.PIN_lightboxImage {
+			display: block;
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+
+		.PIN_lightboxNav {
+			z-index: 1;
+			position: absolute;
+			top: 50%;
+			bottom: auto;
+			width: 50px;
+			height: 50px;
+			margin-top: -25px;
+		}
+
+		.PIN_lightboxNavIcon {
+			display: block;
+			width: 26px;
+			height: 26px;
+			margin: 12px;
+		}
+
+		.PIN_lightboxShowLeft {
+			left: -50px;
+			right: auto;
+			.PIN_lightboxNavIcon {
+				background-position: -171px -33px;
+			}
+			&:hover .PIN_lightboxNavIcon {
+				background-position: -197px -33px;
+			}
+		}
+		
+		.PIN_lightboxShowRight {
+			left: auto;
+			right: -50px;
+			.PIN_lightboxNavIcon {
+				background-position: -223px -33px;
+			}
+			&:hover .PIN_lightboxNavIcon {
+				background-position: -249px -33px;
+			}
+		}	
+	}
+	
+	.PIN_lightboxWindow {
+		z-index: 1;
+		position: absolute;
+		top: 50%;
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		background: @brand-window-bg;
+		.box-shadow(0 0 10px @brand-window-shadow);
+	}
+	
+	.PIN_lightboxOverlay {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: @brand-window-overlay;
+		.opacity(@brand-window-overlay-opacity);
+	}
+}

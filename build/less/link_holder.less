@@ -1,0 +1,53 @@
+#PIN_active {
+	.PIN_node {
+		
+		.PIN_linkHolder {
+			
+			z-index: 1;
+			display: none;
+			padding: 8px;
+			overflow: hidden;
+			
+			.PIN_link {
+
+				z-index: 1;
+				width: 50%;
+				white-space: nowrap;
+				text-indent: 30px;
+				height: 24px;
+				line-height: 24px;
+				color: @brand-footer-link-text;
+				.opacity(0.50);
+				.inline-block;
+				
+				// IE7 layout fix
+				*float: left;
+
+				&:hover {
+					.opacity(1);
+				}
+
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+
+		.PIN_linkHolderBackground {
+
+			z-index: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: @brand-window-bg;
+			.border-radius(0 0 10px 10px);
+
+		}
+	}
+}

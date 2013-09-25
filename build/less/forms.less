@@ -1,0 +1,220 @@
+#PIN_active {
+
+	.PIN_formStyle {
+		
+		padding: 0 35px;
+
+		*[disabled] {
+			color: @brand-form-input-text-disabled !important;
+		}
+
+		p {
+			color: @brand-window-text;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		.PIN_formError {
+			position: absolute;
+			top: 75px;
+			left: 162px;
+			color: @brand-warn-text;
+			font-size: 10px;
+		}
+
+		.PIN_formDisabledMsg {
+			float: left;
+			color: @brand-warn-text;
+			line-height: 27px;
+			margin: 5px 0 0 10px;
+		}
+
+		.PIN_formLabel {
+			width: 430px;
+		}
+
+		.PIN_formLabel-sm {
+			width: 253px;
+			float: left;
+			.PIN_textField span {
+				width: 142px;
+			}
+		}
+
+		.PIN_formLabel,
+		.PIN_formLabel-sm {
+			
+			line-height: 44px;
+			color: @brand-form-label-text;
+			margin-bottom: 10px;
+			clear: both;
+
+			&.PIN_formErrorRow {
+				color: @brand-warn-text;
+			}
+			
+			// input wrapper
+			span {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 10px;
+				line-height: 24px;
+			}
+		}
+
+
+		.PIN_textField input,
+		.PIN_textArea textarea,
+		.PIN_dropDown select {
+			width: 100%;
+			border: none;
+			background: none;
+			font-size: 16px;
+			color: @brand-form-input-text;
+		}
+		
+		.PIN_textField,
+		.PIN_textArea,
+		.PIN_dropDown {
+			span {
+				width: 319px;
+			}
+		}
+
+		.PIN_textField {
+			
+			height: 44px;
+			
+			span {
+				height: 24px;
+				border-bottom: 1px solid lighten(@brand-form-input-bg, 10%);
+				.gradient(linear-gradient(top, darken(@brand-form-input-bg, 5%), @brand-form-input-bg));
+				.border-radius(10px);
+			}
+
+			input {
+				height: 24px;
+				line-height: 24px;
+				cursor: text;
+			}
+		}
+		
+		.PIN_options {
+			
+			float: left;
+			clear: both;
+			height: 27px;
+			margin-top: 5px;
+			padding-left: 82px;
+			
+			* {
+				display: inline;
+				line-height: 27px;
+				margin-left: 10px;
+				color: @brand-window-text;
+			}
+			
+			.PIN_button:not(:first-of-type) {
+				padding-left: 10px;
+				border-left: 1px solid lighten(@brand-window-bg, 15%);
+			}
+		}
+
+	}
+
+	.PIN_dropDownDiv {
+		
+		z-index: 99;
+		width: 327px;
+		padding: 5px;
+		height: auto;
+		position: absolute;
+		background-color: @brand-form-dropdown-bg;
+		.box-shadow(1px 1px 5px rgba(0, 0, 0, 0.8));
+		
+		.PIN_button {
+			
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-decoration: none;
+			text-indent: 26px;
+			line-height: 24px;
+			color: @brand-form-dropdown-text;
+			
+			&:hover {
+				background: @brand-form-dropdown-bg-hover;
+				.PIN_iconLabel {
+					background-position: -24px -50px;
+				}
+			}
+			
+			.PIN_iconLabel {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	.PIN_formBtnSubmit {
+		
+		cursor: pointer;
+		clear: both;
+		border: none;
+		overflow: visible;
+		background: none;
+		float: right;
+		margin-top: 5px;
+		
+		* {
+			cursor: pointer;
+			white-space: nowrap;
+			font-weight: bold;
+			color: @brand-form-button-text;
+		}
+
+		span {
+			margin: 0;
+			padding: 0;
+			height: 27px;
+			line-height: 27px;
+			background-position: -324px -108px;
+			span {
+				margin-left: 11px;
+				padding-right: 20px;
+				text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+				background-position: 100% -162px;
+			}
+		}
+
+		&[disabled] * {
+			color: rgba(0,0,0,0.4);
+			text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+		}
+		
+		&:hover,
+		&[disabled] { 
+			span {
+				background-position: -324px -135px;
+				span {
+					background-position: 100% -189px;
+				}
+			}
+		}
+		
+		&.PIN_button:hover {
+			&,
+			* {
+				text-decoration: none;
+			}
+		}
+		
+		&.PIN_formBtnLeft {
+			float: left;
+			margin-left: -2px;
+		}
+	}
+}
+

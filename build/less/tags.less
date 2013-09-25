@@ -1,0 +1,173 @@
+#PIN_active {
+	.PIN_node {
+		
+		&.PIN_taggingMode .PIN_overlay .PIN_tagHolder {
+			.PIN_tagSmall .PIN_tagDot:hover {
+				background-position: -19px 0;
+			}
+			.PIN_tagMedium .PIN_tagDot:hover {
+				background-position: -63px 0;
+			}
+			.PIN_tagLarge .PIN_tagDot:hover {
+				background-position: -119px 0;
+			}
+		}
+		
+		&.PIN_repositionMode .PIN_overlay .PIN_tagHolder {
+			.PIN_tagSmall .PIN_tagDot {
+				background-position: -19px 0;
+			}
+			.PIN_tagMedium .PIN_tagDot {
+				background-position: -63px 0;
+			}
+			.PIN_tagLarge .PIN_tagDot {
+				background-position: -119px 0;
+			}
+		}
+
+		&.PIN_removalMode .PIN_overlay .PIN_tagHolder {
+			.PIN_tagSmall .PIN_tagDot {
+				background-position: -19px -19px;
+			}
+			.PIN_tagMedium .PIN_tagDot {
+				background-position: -63px -25px;
+			}
+			.PIN_tagLarge .PIN_tagDot {
+				background-position: -119px -31px;
+			}
+		}
+		
+		.PIN_tagHolder {
+			
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			
+			.PIN_tag {
+				
+				z-index: 1;
+				position: absolute;
+				width: auto;
+				height: auto;
+				
+				.PIN_tagDot {
+					z-index: 2;
+					position: absolute;
+				}
+				
+				.PIN_tagOutline {
+					z-index: 1;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					display: none;
+					background: @brand-tag-outline-bg;
+					.opacity(@brand-tag-outline-opacity);
+					.border-radius(999px);
+				}
+				
+				.PIN_tagBubble {
+					z-index: 3;
+					position: absolute;
+					// canvas support
+					.PIN_tagBubbleCanvas {
+						z-index: 0;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+				
+				.PIN_tagBubbleContent {
+					
+					z-index: 1;
+					padding: 10px;
+					
+					.PIN_tagLink {
+						z-index: 2;
+						min-height: 11px;
+						margin-bottom: 4px;
+						padding-bottom: 5px;
+						border-bottom: 1px solid @brand-tag-link-border;
+						&.PIN_lastItem {
+							border-bottom: none;
+							margin-bottom: 0;
+							padding-bottom: 0;
+						}
+					}
+					
+					.PIN_tagLinkText,
+					.PIN_tagLinkURL {
+						z-index: 0;
+						white-space: nowrap;
+						line-height: 12px;
+					}
+					
+					.PIN_tagLinkText {
+						color: @brand-tag-link-text;
+					}
+					
+					.PIN_tagLinkURL {
+						color: @brand-tag-link-url;
+						font-size: 10px;
+					}
+					
+					.PIN_tagLinkLike {
+						width: 11px;
+						height: 11px;
+						z-index: 1;
+						position: absolute;
+						top: 0;
+						right: 0;
+						left: auto;
+						bottom: auto;
+						text-indent: -999px;
+						overflow: hidden;
+						background-position: -80px -127px;
+						&:hover {
+							background-position: -91px -127px;
+						}
+					}
+				}
+			}
+			
+			.PIN_tagSmall .PIN_tagDot {
+				width: 19px;
+				height: 19px;
+				left: -9px;
+				top: -9px;
+				background-position: 0 0;
+			}
+
+			.PIN_tagMedium .PIN_tagDot {
+				width: 25px;
+				height: 25px;
+				left: -12px;
+				top: -12px;
+				background-position: -38px 0;
+			}
+			
+			.PIN_tagLarge .PIN_tagDot {
+				width: 31px;
+				height: 31px;
+				left: -15px;
+				top: -15px;
+				background-position: -88px 0;
+			}
+		}
+	}
+
+	&.PIN_noBorderRadiusSupport .PIN_node .PIN_tagHolder .PIN_tag .PIN_tagOutline { 
+		display: none !important;
+	}
+	
+	// &.PIN_noRgbaSupport .PIN_node .PIN_tagHolder .PIN_tag .PIN_tagOutline {
+	// 	background: transparent;
+	// }
+
+}

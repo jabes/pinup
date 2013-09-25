@@ -1,0 +1,76 @@
+#PIN_active {
+	.PIN_node {
+
+		.PIN_guiLeftHolder {
+			z-index: 99;
+			position: absolute;
+			top: auto;
+			right: auto;
+			bottom: 10px;
+			left: -145px;
+			width: 180px;
+		}
+
+		.PIN_guiRightHolder {
+			z-index: 99;
+			position: absolute;
+			top: 10px;
+			right: -80px;
+			bottom: auto;
+			left: auto;
+			width: 80px;
+			height: 25px;
+		}
+
+		.PIN_btnBotL {
+			width: 100%;
+			height: 33px;
+			line-height: 33px;
+			font-size: 10px;
+			color: @brand-form-button-text;
+			white-space: nowrap;
+			direction: rtl;
+			text-indent: 40px;
+			text-align: right;
+			text-decoration: none;
+			text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.PIN_btnTopR {
+			width: 100%;
+			height: 25px;
+			line-height: 25px;
+			font-size: 10px;
+			white-space: nowrap;
+			text-indent: 10px;
+			text-align: left;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.PIN_btnAddTag {
+			background-position: 100% 0;
+		}
+
+		.PIN_btnCancel {
+			background-position: -234px -83px;
+			color: @brand-form-button-text;
+			text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+		}
+
+		.PIN_btnSettings {
+			z-index: 2;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 29px;
+			height: 29px;
+			background-position: -80px -98px;
+		}
+	}
+}
