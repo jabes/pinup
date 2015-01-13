@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 		},
 
 		concat: {
-			js: {
+			dist: {
 				src: [
 					'<%= path_build_js %>/prefs.js',
 					'<%= path_build_js %>/lib.js',
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
 			options: {
 				jshintrc: '.jshintrc'
 			},
-			all: [
+			dist: [
 				'Gruntfile.js',
 				'<%= path_cdn_js %>/*.js',
 				'!<%= path_cdn_js %>/*.min.js'
@@ -104,29 +104,8 @@ module.exports = function (grunt) {
 			}
 		},
 
-		deployments: {
-			local: {
-				'title': 'Local',
-				'database': 'pinup',
-				'user': 'root',
-				'pass': 'root',
-				'url': 'local.jbull.ca',
-				'host': 'localhost'
-			},
-			production: {
-				'title': 'Production',
-				'database': 'pinup',
-				'user': 'root',
-				'pass': 'htPtYMSoq9Sp',
-				'url': 'jbull.ca',
-				'host': 'localhost',
-				'ssh_host': 'root@jbull.ca'
-			}
-		}
-
 	});
 
-	// Load tasks
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-less');
@@ -134,20 +113,14 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-deployments');
 
-	// Register tasks
 	grunt.registerTask('default', [
 		'clean',
-		'concat:js',
+		'concat',
 		'jshint',
 		'uglify',
 		'less',
 		'cssmin'
-	]);
-
-	grunt.registerTask('deploy', [
-		'db_push --target=production'
 	]);
 
 };

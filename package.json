@@ -14,10 +14,6 @@
 		"grunt-contrib-uglify": "latest",
 		"grunt-contrib-cssmin": "latest",
 		"grunt-contrib-watch": "latest",
-		"grunt-contrib-less": "latest",
-		"grunt-deployments": "latest",
-		"grunt-shell": "latest",
-		"grunt-ssh": "latest",
-		"grunt-replace": "latest"
+		"grunt-contrib-less": "latest"
 	}
 }
