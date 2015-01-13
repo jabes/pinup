@@ -110,7 +110,7 @@ class User
 		if ($this->user) { // if logged in
 			session_regenerate_id(true); // replace current session id and delete old session
 			$this->sessid = session_id();
-			$_SESSION[SESSKEY_USER_TEMPID] = $this->sessid;
+			$_SESSION['SESSKEY_USER_TEMPID'] = $this->sessid;
 			Query::update("accounts", array(
 				'strTPID' => $this->sessid, 
 				'nFailedLoginAttempts' => 0
@@ -182,7 +182,7 @@ class User
 	public function terminate()
 	{
 		if ($this->sessid) Query::update("accounts", array('strTPID' => null), array('strTPID' => $this->sessid));
-		unset($_SESSION[SESSKEY_USER_TEMPID]);
+		unset($_SESSION['SESSKEY_USER_TEMPID']);
 		unset($this->sessid);
 	}
 	

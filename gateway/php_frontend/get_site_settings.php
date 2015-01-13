@@ -46,9 +46,12 @@ $arrSettingTypes = array(
 	'custom' => 'array'
 );
 
-foreach (array_keys($arrSettingTypes) as $key => $val) $arrFieldNames[$key] = "ss." . array_shift(explode(".", $val));
-$arrFieldNames = array_unique($arrFieldNames);
+foreach (array_keys($arrSettingTypes) as $key => $val) {
+	$parts = explode(".", $val);
+	$arrFieldNames[$key] = "ss." . array_shift($parts);
+}
 
+$arrFieldNames = array_unique($arrFieldNames);
 
 function checkTypeCast($array, $scope = "") {
 	global $arrSettingTypes;

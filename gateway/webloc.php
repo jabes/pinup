@@ -1,10 +1,7 @@
 <?php
 
-//header("content-type:text/plain");
-
-//error_reporting(E_ALL);
-//ini_set('display_errors', '1');
-
+// disable deprecated warnings
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE | E_STRICT);
 
 require_once dirname(__FILE__) . "/php/config.php";
 
@@ -17,7 +14,7 @@ spl_autoload_register("classLoader");
 // identity function, returns its argument unmodified.
 function o($o) { return $o; }
 
-$HUB_USER_TPID = isset($_SESSION[USER_SESSION_AGENT]) ? $_SESSION[USER_SESSION_AGENT] : null;
+$HUB_USER_TPID = isset($_SESSION['USER_SESSION_AGENT']) ? $_SESSION['USER_SESSION_AGENT'] : null;
 $HUB_USER_IP = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null;
 $HUB_USER_AGENT = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : null;
 $HUB_REFERER = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;

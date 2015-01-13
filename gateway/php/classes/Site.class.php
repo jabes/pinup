@@ -31,7 +31,13 @@ class Site
 	
 	private static function getDomain($url)
 	{
-		return strtolower(implode('.', array_slice(explode('.', parse_url($url, PHP_URL_HOST)), -2)));
+		$scheme = parse_url($url, PHP_URL_SCHEME);
+		if (!$scheme) $url = "//" . $url;
+		$host = parse_url($url, PHP_URL_HOST);
+		$host_parts = explode('.', $host);
+		$domain_parts = array_slice($host_parts, -2);
+		$domain_str = implode('.', $domain_parts);
+		return strtolower($domain_str);
 	}
 
 	// query our site data if needed
