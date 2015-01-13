@@ -17,16 +17,10 @@ define("CLASS_FILE_LOCATION", DOCUMENT_ROOT . "/php/classes/%s.class.php");
 define("DEVMODE", false); # warning: if true, frontend will stop working
 define("ALLOW_MEMCACHE", false);
 
-// define('MYSQL_HOST', SYS_FQDN . ":" . SYS_MYSQL_PORT);
-// define('MYSQL_USER', "root");
-// define('MYSQL_PASS', "htPtYMSoq9Sp");
-// define('MYSQL_DB', "pinup");
-
 define('MYSQL_HOST', "127.0.0.1");
 define('MYSQL_USER', "root");
 define('MYSQL_PASS', "root");
 define('MYSQL_DB', "pinup");
-
 
 define('MAINSITE_URL', "http://" . SYS_FQDN . ":" . SYS_HTTP_PORT . "/work/pinup"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
@@ -35,7 +29,6 @@ define('SITE_VERIFY_METAKEY', strtolower(SYS_NAME) . "-site-verification");
 define('SESS_NAME', SYS_NAME . "_Hub_Session");
 define('SESSKEY_USER_TEMPID', SYS_NAME . "_Session_User_TempId");
 define('SESSKEY_USER_WASKICKED', SYS_NAME . "_Session_User_WasKicked");
-
 
 # do not change this value post dev - values in the db will already have this delimiter saved
 define('DB_ARRAY_DELIMITER', ","); # delimiter used when storing arrays as text in a database record
@@ -59,11 +52,3 @@ define('REQUIRED_PARAMS', serialize(array(
 )));
 
 define("VALID_DOMAIN_EXCEPTIONS", serialize(array("jbull.ca")));
-
-
-/*
-define('FTP_HOST', 'ftp.jbull.ca');
-define('FTP_USER', 'jbullca');
-define('FTP_PASS', 'w3h3@MVmQ$Ty3B!U');
-*/
-
