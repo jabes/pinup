@@ -30,6 +30,7 @@ CREATE TABLE `accesstracker` (
   `nRegimageID` int(11) DEFAULT NULL,
   `nAccessType` tinyint(4) DEFAULT NULL,
   `strIpAddress` varchar(15) DEFAULT NULL,
+  `dateCreated` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -51,6 +52,7 @@ CREATE TABLE `accounts` (
   `strSalt` varchar(8) DEFAULT NULL,
   `nFailedLoginAttempts` tinyint(4) DEFAULT NULL,
   `dateLastLoginAttempt` timestamp NULL DEFAULT NULL,
+  `dateRegistered` timestamp NULL DEFAULT NULL,
   `bStatus` tinyint(4) DEFAULT 1,
   `bEmailVerified` tinyint(4) DEFAULT 0,
   PRIMARY KEY (`id`)
@@ -115,6 +117,7 @@ CREATE TABLE `regimage` (
   `strImagePath` varchar(256) DEFAULT NULL,
   `nSitesID` int(11) DEFAULT NULL,
   `strHash` varchar(32) DEFAULT NULL,
+  `dateCreated` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -269,6 +272,7 @@ CREATE TABLE `clicklog` (
   `strWebLink` varchar(256) DEFAULT NULL,
   `strWebReferer` varchar(256) DEFAULT NULL,
   `strClickerIP` varchar(15) DEFAULT NULL,
+  `dateClicked` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;

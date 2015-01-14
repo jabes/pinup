@@ -7,7 +7,7 @@ $nWaitTime = $user->tooManyLoginAttempts($urldata['strUsername']);
 
 if (isset($nWaitTime)) {
 	// use a session to remember if user has been kicked
-	$_SESSION['SESSKEY_USER_WASKICKED'] = true; 
+	$_SESSION[SESSKEY_USER_WASKICKED] = true; 
 	Util::quit("PLEASE TRY AGAIN IN {$nWaitTime} SECONDS");
 }
 
@@ -19,8 +19,8 @@ if (!$arrUser) {
 	
 	// if the user has just finished their sentence then reset back to 1
 	// faster to do this than check how many current attempts have been made
-	if (isset($_SESSION['SESSKEY_USER_WASKICKED'])) {
-		unset($_SESSION['SESSKEY_USER_WASKICKED']);
+	if (isset($_SESSION[SESSKEY_USER_WASKICKED])) {
+		unset($_SESSION[SESSKEY_USER_WASKICKED]);
 		Query::update("accounts", array('nFailedLoginAttempts' => 1), array('strEmail' => $urldata['strUsername']));
 	} else {
 		Query::execute("UPDATE accounts SET nFailedLoginAttempts = nFailedLoginAttempts + 1 WHERE strEmail = '%s'", $urldata['strUsername']);

@@ -19,13 +19,14 @@ class Tracker
 			throw new TrackerException('Insufficient data for access tracker to function');
 		} else {
 			// only allow one log per image, per ip, per day
-			// SELECT * FROM accesstracker WHERE strIpAddress='{$ipaddy}' AND nRegimageID={$nRegimageID} AND DATE(dateStamp)=CURDATE()
+			// SELECT * FROM accesstracker WHERE strIpAddress='{$ipaddy}' AND nRegimageID={$nRegimageID} AND DATE(dateCreated)=CURDATE()
 			// note: just log everything; we can check ip addresses when we need to.. chances are that html5 local storage will prevent them from loading this twice anyhow
 			Query::insert("accesstracker", array(
 				'nAccessType' => 1,
 				'nSitesID' => $nSiteID,
 				'strIpAddress' => $ipaddy,
-				'nRegimageID' => $nRegimageID
+				'nRegimageID' => $nRegimageID,
+				'dateCreated' => Query::sqlfn_now,
 			));
 		}
 	}
@@ -39,7 +40,8 @@ class Tracker
 			Query::insert("accesstracker", array(
 				'nAccessType' => 2,
 				'nSitesID' => $nSiteID,
-				'strIpAddress' => $ipaddy
+				'strIpAddress' => $ipaddy,
+				'dateCreated' => Query::sqlfn_now,
 			));
 		}
 	}
@@ -53,7 +55,8 @@ class Tracker
 			Query::insert("accesstracker", array(
 				'nAccessType' => 3,
 				'nSitesID' => $nSiteID,
-				'strIpAddress' => $ipaddy
+				'strIpAddress' => $ipaddy,
+				'dateCreated' => Query::sqlfn_now,
 			));
 
 		}

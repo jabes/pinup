@@ -56,7 +56,8 @@ if ($regimage) {
 	$lastInsertID = Query::insert("regimage", array(
 		'nSitesID' => $arrSiteData['id'],
 		'strImagePath' => $urldata['strImageURL'],
-		'strHash' => $strImageHash
+		'strHash' => $strImageHash,
+		'dateCreated' => Query::sqlfn_now,
 	));
 	
 	// track every time an image gets the logo 
