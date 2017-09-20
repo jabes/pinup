@@ -14,3 +14,10 @@ npm run build
 vagrant plugin install vagrant-hostsupdater
 vagrant up
 ```
+
+### Screenshots
+
+![](screenshots/screenshot_001.png)
+![](screenshots/screenshot_002.png)
+![](screenshots/screenshot_004.png)
+![](screenshots/screenshot_003.png)
