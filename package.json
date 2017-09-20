@@ -1,12 +1,19 @@
 {
 	"name": "pinup",
 	"version": "0.0.0",
-	"author": "Justin Bull",
-	"homepage": "http://www.jbull.ca/work/pinup",
-	"engines": {
-		"node": ">= 0.10.12"
+	"author": {
+		"name": "Justin Bull",
+		"email": "bull.justin@gmail.com",
+		"url": "http://jbull.ca/"
+	},
+	"license": "MIT",
+	"homepage": "https://jabes.github.io/pinup/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jabes/pinup"
 	},
 	"devDependencies": {
+		"bower": "latest",
 		"grunt": "latest",
 		"grunt-contrib-clean": "latest",
 		"grunt-contrib-jshint": "latest",
@@ -15,5 +22,9 @@
 		"grunt-contrib-cssmin": "latest",
 		"grunt-contrib-watch": "latest",
 		"grunt-contrib-less": "latest"
+	},
+	"scripts": {
+		"postinstall": "bower install",
+		"build": "grunt"
 	}
 }
