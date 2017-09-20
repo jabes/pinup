@@ -1,11 +1,6 @@
 {
   "name": "pinup",
   "dependencies": {
-    "lesshat": "git://github.com/CSSHat/LESSHat"
-  },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components"
-  ]
+    "lesshat": "2.0.15"
+  }
 }

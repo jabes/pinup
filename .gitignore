@@ -1,7 +1,10 @@
-.DS_Store
-.log
-error_log
+**/.*
+!.bowerrc
+!.gitignore
+!.htaccess
+!.jshintrc
+
+*.log
+
+build/vendor/
 node_modules
-vendor
-bower_components
-backups
