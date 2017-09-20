@@ -1,5 +1,6 @@
 {
 	"name": "pinup",
+	"description": "Lightweight JavaScript library for tagging content within images on your website.",
 	"version": "0.0.0",
 	"author": {
 		"name": "Justin Bull",
