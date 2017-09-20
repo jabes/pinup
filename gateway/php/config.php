@@ -2,15 +2,13 @@
 
 define('SYS_VERSION', "2.02"); # same as JS script version on CDN
 define('SYS_NAME', "Pinup");
-define('SYS_DOMAIN', "jbull.ca"); # reliant domain name used within system
-define('SYS_FQDN', "www." . SYS_DOMAIN); # reliant domain name used within system
-define('SYS_HTTP_PORT', 80);
+define('SYS_DOMAIN', "pinup.dev"); # reliant domain name used within system
 define('SYS_MYSQL_PORT', 3306);
-define('SYS_WEBURL', "http://" . SYS_FQDN . ":" . SYS_HTTP_PORT . "/work/pinup/gateway"); # reliant web url (backend: used in system connections)
-define('SYS_AGENT', "JabesNet/" . SYS_NAME . "/Hub/v-" . SYS_VERSION);
+define('SYS_WEBURL', "http://" . SYS_DOMAIN . "/gateway"); # reliant web url (backend: used in system connections)
+define('SYS_AGENT', SYS_NAME . "/Hub/v-" . SYS_VERSION);
 define('SYS_POSTMASTER_EMAIL', "bull.justin@gmail.com");
 
-define("DOCUMENT_ROOT", "/home/justin/Sites/jbull/work/pinup/gateway");
+define("DOCUMENT_ROOT", "/var/www/public/gateway");
 define("HUB_FILE_LOCATION", DOCUMENT_ROOT . "/php_frontend/%s.php");
 define("CLASS_FILE_LOCATION", DOCUMENT_ROOT . "/php/classes/%s.class.php");
 
@@ -22,7 +20,7 @@ define('MYSQL_USER', "root");
 define('MYSQL_PASS', "root");
 define('MYSQL_DB', "pinup");
 
-define('MAINSITE_URL', "http://" . SYS_FQDN . ":" . SYS_HTTP_PORT . "/work/pinup"); # unreliant web url (frontend: used in contact info)
+define('MAINSITE_URL', "http://" . SYS_DOMAIN . "/"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
 define('SITE_VERIFY_METAKEY', strtolower(SYS_NAME) . "-site-verification");
 
@@ -51,4 +49,4 @@ define('REQUIRED_PARAMS', serialize(array(
 	'verify_site' => array("uuid")
 )));
 
-define("VALID_DOMAIN_EXCEPTIONS", serialize(array("jbull.ca")));
+define("VALID_DOMAIN_EXCEPTIONS", serialize(array(SYS_DOMAIN)));
