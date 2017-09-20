@@ -181,9 +181,9 @@ directory = {
 	paths: {
 		twitter: 'http://twitter.com/intent/tweet?',
 		facebook: 'https://www.facebook.com/sharer.php?',
-		gateway: 'http://local.jbull.ca/work/pinup/gateway/',
-		cdn: 'http://local.jbull.ca/work/pinup/cdn/',
-		website: 'http://local.jbull.ca/work/pinup/'
+		gateway: 'http://pinup.dev/gateway/',
+		cdn: 'http://pinup.dev/cdn/',
+		website: 'http://pinup.dev/'
 	}
 };
 
