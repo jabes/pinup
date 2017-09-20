@@ -15,9 +15,11 @@ vagrant plugin install vagrant-hostsupdater
 vagrant up
 ```
 
+The server will now be available on the [pinup.dev](http://pinup.dev/) domain.
+
 ### Screenshots
 
 ![](screenshots/screenshot_001.png)
 ![](screenshots/screenshot_002.png)
-![](screenshots/screenshot_004.png)
 ![](screenshots/screenshot_003.png)
+![](screenshots/screenshot_004.png)
