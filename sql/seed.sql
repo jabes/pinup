@@ -31,8 +31,8 @@ INSERT INTO `pinup`.`sites`
 ) VALUES (
 	1,
 	'b7b7f57e-4961-11e2-b001-000c29e620fe',
-	'jbull',
-	'local.jbull.ca',
+	'pinup',
+	'pinup.dev',
 	1
 );
 
