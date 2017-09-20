@@ -2022,7 +2022,8 @@ pfunc = {
 					pfunc.onImageDimensionReady(child, function () {
 						centerLightbox(this);
 						pfunc.loadImage(this);
-						nodeTracker.push(cacheNodes[this.pinUID]);
+						var node = cacheNodes[this.pinUID];
+						if (node) { nodeTracker.push(node); }
 					});
 				} else {
 					centerLightbox(child);
@@ -2042,7 +2043,7 @@ pfunc = {
 			destroyLightbox = function () {
 				// clean up after ourselves..
 				// if we dont destroy the nodes then the images are kept in cache and if we load the lightbox again, the images are included
-				plib.loopArray(nodeTracker, function (node) { node.instance.destroy(); });
+				plib.loopArray(nodeTracker, function (node) { if (node) { node.instance.destroy(); } });
 				nodeTracker = []; // empty the tracker
 				plib.removeElement(lightbox); // will remove all sub elements, including their events and cache etc..
 			},
@@ -2078,7 +2079,7 @@ pfunc = {
 			// insert images found from cache into our image holder
 			plib.loopObject(cacheImages, function (key, val) {
 				if (key === image.pinUID) { index = i; }
-				if (val.image.src !== window.location.href) {
+				if (val.loaded && val.image.src !== window.location.href) {
 					plib.domAppend(html.img, lightboxImageHolder, { 'class': classes.lightboxImage, 'src': val.image.src });
 					i += 1;
 				}
