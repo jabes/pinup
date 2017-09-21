@@ -491,7 +491,7 @@ pfunc = {
 				valid = false;
 
 			// dont load images if they are not a known image file format
-			} else if (!plib.inArray(settings.allowFile.split('|'), imgFileExt)) {
+			} else if (!plib.inArray(settings.allowFile.split(','), imgFileExt)) {
 				// {opendebug}
 				pfunc.warn(messages.imageBadFile, imgFileExt, image);
 				// {closedebug}

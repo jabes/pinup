@@ -220,7 +220,7 @@ defaultSettings = {
 	//theme: "default", // if a valid theme name is provided then load that theme
 	themeFile: "", // if a valid theme file is provided then load that theme
 
-	allowFile: "jpg|jpeg|png", // filter out any image that does not contain these file types
+	allowFile: "jpg,jpeg,png", // filter out any image that does not contain these file types
 	allowThemeManager: false, // if true then check if theme files have loaded and load them if they are missing
 	allowLocalStorage: false, // allow HTML5 local caching on some queries
 	allowBottomLinks: false, // if true then include a link holder after the image with links to the tags placed in said image
