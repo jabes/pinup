@@ -1,14 +1,17 @@
-<?php 
+<?php
+
+$host = $_SERVER['HTTP_HOST'];
+$doc_root = $_SERVER['DOCUMENT_ROOT'];
 
 define('SYS_VERSION', "2.02"); # same as JS script version on CDN
 define('SYS_NAME', "Pinup");
-define('SYS_DOMAIN', "pinup.dev"); # reliant domain name used within system
+define('SYS_DOMAIN', $host); # reliant domain name used within system
 define('SYS_MYSQL_PORT', 3306);
 define('SYS_WEBURL', "http://" . SYS_DOMAIN . "/gateway"); # reliant web url (backend: used in system connections)
 define('SYS_AGENT', SYS_NAME . "/Hub/v-" . SYS_VERSION);
 define('SYS_POSTMASTER_EMAIL', "bull.justin@gmail.com");
 
-define("DOCUMENT_ROOT", "/var/www/public/gateway");
+define("DOCUMENT_ROOT", "{$doc_root}/gateway");
 define("HUB_FILE_LOCATION", DOCUMENT_ROOT . "/php_frontend/%s.php");
 define("CLASS_FILE_LOCATION", DOCUMENT_ROOT . "/php/classes/%s.class.php");
 
