@@ -1,23 +1,28 @@
 #!/bin/bash
 
-# https://github.com/scotch-io/scotch-box/issues/275
-sudo rm /etc/apt/sources.list.d/ondrej-php5-5_6-trusty.list
-sudo apt-get -y update
+# Setup non interaction for mysql install
+sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password root"
+sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password root"
 
 # This project is old.. and is not able to use the mysqli extension
-# So downgrade to php5.6
-sudo apt-get -y purge php.*
+# So downgrade php and mysql
+sudo apt-get -y purge php*
+sudo apt-get -y purge mysql*
 sudo apt-get -y autoremove
-sudo apt-get -y install php5.6 \
-                        php5.6-common \
-                        php5.6-curl \
-                        php5.6-json \
-                        php5.6-mbstring \
-                        php5.6-mcrypt \
-                        php5.6-memcache \
-                        php5.6-mysql \
-                        libapache2-mod-php5.6 \
+sudo apt-get -y update
+sudo apt-get -y install apache2 \
+                        libapache2-mod-php5 \
+                        php5 \
+                        php5-common \
+                        php5-curl \
+                        php5-json \
+                        php5-mcrypt \
+                        php5-memcache \
+                        php5-mysql \
+                        mysql-server \
                         sendmail
+
+# Enable php mods
 sudo php5enmod mcrypt
 sudo php5enmod memcache
 sudo service apache2 restart
@@ -28,20 +33,9 @@ sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/app-password-confirm pass
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/admin-pass password root"
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/app-pass password root"
 sudo debconf-set-selections <<< "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2'"
-sudo apt-get -q -y install phpmyadmin
+sudo apt-get -y install phpmyadmin
 
 # Migrate the database
 mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS pinup"
-mysql -uroot -proot pinup < /var/www/public/sql/schema.sql
-mysql -uroot -proot pinup < /var/www/public/sql/seed.sql
-
-# Bind to all available addresses
-printf "[mysqld]\nbind-address = 0.0.0.0" | sudo tee /etc/mysql/conf.d/bind_address.cnf
-sudo service mysql restart
-
-# Grant privileges to all local ips
-mysql -uroot -proot -e "GRANT ALL ON pinup.* TO root@'192.168.1.%' IDENTIFIED BY 'root'"
-mysql -uroot -proot -e "GRANT ALL ON pinup.* TO root@'pinup-stats.dev' IDENTIFIED BY 'root'"
-
-# Allow remote connections from local subnet
-sudo iptables -A INPUT -i eth0 -s 192.168.1.0/24 -p tcp --destination-port 3306 -j ACCEPT
+mysql -uroot -proot pinup < /var/www/html/sql/schema.sql
+mysql -uroot -proot pinup < /var/www/html/sql/seed.sql
