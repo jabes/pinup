@@ -1,6 +1,6 @@
-![Pinup.js](resources/banner.png)
+![](resources/banner.png)
 
----
+# Pinup.js
 
 Pinup.js is a lightweight JavaScript library for tagging content within images on your website.
 It is lightweight and independent from other JavaScript libraries.
