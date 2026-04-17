@@ -22,7 +22,7 @@ class Connection
 
 	public function __construct($host = null, $user = null, $pass = null, $table = null) 
 	{
-		if (!extension_loaded('mysql')) throw new Exception("PHP extension 'mysql' is not loaded");
+		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysql' is not loaded");
 		if ($host && $user && $pass && $table) $this->connect($host, $user, $pass, $table);
 	}
 	
@@ -38,14 +38,14 @@ class Connection
 		$this->user = $user;
 		$this->pass = $pass;
 		$this->table = $table;
-		$this->connection = mysql_connect($this->host, $this->user, $this->pass);
+		$this->connection = mysqli_connect($this->host, $this->user, $this->pass);
 		if (!$this->connection) throw new ConnectionException("Could not connect with MySQL");
-		if (!mysql_select_db($this->table, $this->connection)) throw new ConnectionException("Could not connect with database");
+		if (!mysqli_select_db($this->connection, $this->table)) throw new ConnectionException("Could not connect with database");
 	}
 
 	public function disconnect()
 	{
-		if ($this->connection) mysql_close($this->connection);
+		if ($this->connection) mysqli_close($this->connection);
 	}
 
 	/*
@@ -53,8 +53,9 @@ class Connection
 	*/
 	public static function cleanData($data)
 	{
-		if (is_array($data)) foreach ($data as $k => $v) $data[$k] = Connection::cleanData($v); //recursive
-		elseif (is_string($data)) $data = mysql_real_escape_string($data);
+        global $connSlave;
+        if (is_array($data)) foreach ($data as $k => $v) $data[$k] = Connection::cleanData($v); //recursive
+		elseif (is_string($data)) $data = mysqli_real_escape_string($connSlave->connection, $data);
 		return $data;
 	}
 
