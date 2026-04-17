@@ -32,7 +32,7 @@ INSERT INTO `pinup`.`sites`
 	1,
 	'b7b7f57e-4961-11e2-b001-000c29e620fe',
 	'pinup',
-	'pinup.dev',
+	'pinup.justinbull.dev',
 	1
 );
 
@@ -91,7 +91,7 @@ INSERT INTO `pinup`.`regimage`
 ) VALUES (
 	1,
 	1,
-	'http://pinup.dev/resources/starbucks-christmas.jpg',
+	'https://pinup.justinbull.dev/resources/starbucks-christmas.jpg',
 	'fea4d583399bcbd0faa8cc968c77951f',
 	NOW()
 );
@@ -116,8 +116,8 @@ INSERT INTO `pinup`.`tags`
 ) VALUES (
 	'53f301d5-9f47-11e7-ac53-0800273a0b5b',
 	'Starbucks',
-	'http://www.starbucks.ca/',
-	'http://pinup.dev/',
+	'https://www.starbucks.ca/',
+	'https://pinup.justinbull.dev/',
 	'1,2,3',
 	0.5328947368,
 	0.3767258383,
@@ -143,9 +143,9 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW()),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW()),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW());
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW()),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW()),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW());
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -159,11 +159,11 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 1 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -177,15 +177,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 2 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -199,13 +199,13 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 3 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -219,18 +219,18 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 4 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -244,16 +244,16 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 5 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -267,14 +267,14 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 6 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -288,20 +288,20 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 7 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -315,18 +315,18 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 8 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -340,15 +340,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 9 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -362,13 +362,13 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 10 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -382,19 +382,19 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 11 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -408,15 +408,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 12 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -430,17 +430,17 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 13 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -454,15 +454,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 14 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -476,19 +476,19 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 15 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -502,15 +502,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 16 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -524,13 +524,13 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 17 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -544,11 +544,11 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 18 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -562,14 +562,14 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 19 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -583,17 +583,17 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 20 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -607,18 +607,18 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 21 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -632,16 +632,16 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 22 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -655,15 +655,15 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 23 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -677,16 +677,16 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 24 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -700,13 +700,13 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 25 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -720,16 +720,16 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 26 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -743,11 +743,11 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 27 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -761,12 +761,12 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 28 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -780,10 +780,10 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 29 DAY);
 
 INSERT INTO `pinup`.`clicklog`
 (
@@ -797,13 +797,13 @@ INSERT INTO `pinup`.`clicklog`
 	`strClickerIP`,
 	`dateClicked`
 ) VALUES
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
-(1, 1, 1, 2, 1, 'http://www.starbucks.ca/', 'http://pinup.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY);
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY),
+(1, 1, 1, 2, 1, 'https://www.starbucks.ca/', 'https://pinup.justinbull.dev/', '192.168.2.1', NOW() - INTERVAL 30 DAY);
