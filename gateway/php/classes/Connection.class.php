@@ -22,7 +22,7 @@ class Connection
 
 	public function __construct($host = null, $user = null, $pass = null, $table = null) 
 	{
-		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysql' is not loaded");
+		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysqli' is not loaded");
 		if ($host && $user && $pass && $table) $this->connect($host, $user, $pass, $table);
 	}
 	
