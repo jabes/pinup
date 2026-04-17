@@ -184,7 +184,7 @@ class Query
 	
 	public function __construct($method = null)
 	{
-		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysql' is not loaded");
+		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysqli' is not loaded");
 		if (isset($method)) $this->queryMethod = $method;
 	}
 	
