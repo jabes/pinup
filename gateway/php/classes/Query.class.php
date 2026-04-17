@@ -184,7 +184,7 @@ class Query
 	
 	public function __construct($method = null)
 	{
-		if (!extension_loaded('mysql')) throw new Exception("PHP extension 'mysql' is not loaded");
+		if (!extension_loaded('mysqli')) throw new Exception("PHP extension 'mysql' is not loaded");
 		if (isset($method)) $this->queryMethod = $method;
 	}
 	
@@ -281,7 +281,7 @@ class Query
 		global $connSlave;
 		if (DEVMODE) $startTime = microtime(true);
 		if (!$connSlave->connection) throw new QueryException('Failed to establish a connection with database');
-		$resource = mysql_query($sql, $connSlave->connection) or die(mysql_error());
+		$resource = mysqli_query($connSlave->connection, $sql) or die(mysqli_error($connSlave->connection));
 		if (DEVMODE) self::output($sql, (microtime(true) - $startTime));
 		return $resource; 
 	}
@@ -312,8 +312,8 @@ class Query
 			$result = self::execute($this->queryString);
 			// we only allow one row (result) in this function
 			// use "Query::selectMulti" if you want multiple rows (results)
-			if (mysql_num_rows($result) === 1) {	
-				$assoc = mysql_fetch_assoc($result);
+			if (mysqli_num_rows($result) === 1) {
+				$assoc = mysqli_fetch_assoc($result);
 				if (count($assoc) === 1) {
 					$item = array_values($assoc);
 					$arrData = stripslashes($item[0]);
@@ -337,7 +337,7 @@ class Query
 			if (isset($sql)) $this->queryString = $sql;
 			$result = self::execute($this->queryString);
 			$arrData = array();
-			while ($row = mysql_fetch_assoc($result)) {
+			while ($row = mysqli_fetch_assoc($result)) {
 				if (isset($key) && array_key_exists($key, $row)) {
 					$keyval = $row[$key];
 					unset($row[$key]);
@@ -424,7 +424,8 @@ class Query
 		}
 		$sql_vals = rtrim($sql_vals, self::sql_delimiter);
 		self::execute("INSERT IGNORE INTO {$query_table} ({$sql_keys}) VALUES ({$sql_vals}) ON DUPLICATE KEY UPDATE id = LAST_INSERT_ID(id)");
-		return mysql_insert_id();
+        global $connSlave;
+		return mysqli_insert_id($connSlave->connection);
 	}
 
 	/*
@@ -438,7 +439,8 @@ class Query
 		$sql_set = self::serializeArray($insert_values);
 		$sql_where = self::serializeArray($conditional_values, " AND ");
 		self::execute("UPDATE {$query_table} SET {$sql_set} WHERE {$sql_where}");
-		return mysql_affected_rows();
+        global $connSlave;
+        return mysqli_affected_rows($connSlave->connection);
 	}
 
 	/*
@@ -450,7 +452,8 @@ class Query
 	{
 		$sql_where = self::serializeArray($conditional_values, " AND ");
 		self::execute("DELETE FROM {$query_table} WHERE {$sql_where}");
-		return mysql_affected_rows();
+        global $connSlave;
+		return mysqli_affected_rows($connSlave->connection);
 	}
 
 	/*
