@@ -27,8 +27,8 @@ vagrant plugin install vagrant-hostsupdater
 vagrant up
 ```
 
-- The server will now be available on the [pinup.dev](http://pinup.dev/) domain.
-- phpMyAdmin will be available at [pinup.dev/phpmyadmin](http://pinup.dev/phpmyadmin).
+- The server will now be available on the [pinup.justinbull.dev](https://pinup.justinbull.dev) domain.
+- phpMyAdmin will be available at [pinup.justinbull.dev/phpmyadmin](https://pinup.justinbull.dev/phpmyadmin).
 
 ### Settings
 
