@@ -20,8 +20,8 @@ define("ALLOW_MEMCACHE", false);
 
 define('MYSQL_HOST', getenv('MYSQL_HOST'));
 define('MYSQL_USER', getenv('MYSQL_USER'));
-define('MYSQL_PASS', getenv('MYSQL_PASS'));
-define('MYSQL_DB', getenv('MYSQL_DB'));
+define('MYSQL_PASS', getenv('MYSQL_PASSWORD'));
+define('MYSQL_DB', getenv('MYSQL_DATABASE'));
 
 define('MAINSITE_URL', "http://" . SYS_DOMAIN . "/"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
