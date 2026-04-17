@@ -7,7 +7,7 @@ CREATE TABLE `accesstracker` (
   `nSitesID` int(11) DEFAULT NULL,
   `nRegimageID` int(11) DEFAULT NULL,
   `nAccessType` tinyint(4) DEFAULT NULL,
-  `strIpAddress` varchar(15) DEFAULT NULL,
+  `strIpAddress` varchar(255) DEFAULT NULL,
   `dateCreated` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -15,12 +15,12 @@ CREATE TABLE `accesstracker` (
 DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE `accounts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strGUID` varchar(36) DEFAULT NULL,
-  `strTPID` varchar(26) DEFAULT NULL,
-  `strEmail` varchar(256) DEFAULT NULL,
-  `strFullName` varchar(256) DEFAULT NULL,
-  `strPassword512` varchar(128) DEFAULT NULL,
-  `strSalt` varchar(8) DEFAULT NULL,
+  `strGUID` varchar(255) DEFAULT NULL,
+  `strTPID` varchar(255) DEFAULT NULL,
+  `strEmail` varchar(255) DEFAULT NULL,
+  `strFullName` varchar(255) DEFAULT NULL,
+  `strPassword512` varchar(255) DEFAULT NULL,
+  `strSalt` varchar(255) DEFAULT NULL,
   `nFailedLoginAttempts` tinyint(4) DEFAULT NULL,
   `dateLastLoginAttempt` timestamp NULL DEFAULT NULL,
   `dateRegistered` timestamp NULL DEFAULT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE `accounts` (
 DROP TABLE IF EXISTS `accountssites`;
 CREATE TABLE `accountssites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strGUID` varchar(36) DEFAULT NULL,
+  `strGUID` varchar(255) DEFAULT NULL,
   `nAccountsID` int(11) DEFAULT NULL,
   `nSitesID` int(11) DEFAULT NULL,
   `bVerified` tinyint(4) DEFAULT 0,
@@ -42,24 +42,24 @@ CREATE TABLE `accountssites` (
 DROP TABLE IF EXISTS `blockedregistrations`;
 CREATE TABLE `blockedregistrations` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strEmail` varchar(256) DEFAULT NULL,
-  `strIpAddress` varchar(15) DEFAULT NULL,
+  `strEmail` varchar(255) DEFAULT NULL,
+  `strIpAddress` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `keywords`;
 CREATE TABLE `keywords` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strKeyword` varchar(100) DEFAULT NULL,
+  `strKeyword` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `regimage`;
 CREATE TABLE `regimage` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strImagePath` varchar(256) DEFAULT NULL,
+  `strImagePath` varchar(255) DEFAULT NULL,
   `nSitesID` int(11) DEFAULT NULL,
-  `strHash` varchar(32) DEFAULT NULL,
+  `strHash` varchar(255) DEFAULT NULL,
   `dateCreated` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -67,9 +67,9 @@ CREATE TABLE `regimage` (
 DROP TABLE IF EXISTS `sites`;
 CREATE TABLE `sites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strGUID` varchar(36) DEFAULT NULL,
-  `strSiteName` varchar(256) DEFAULT NULL,
-  `strURL` varchar(256) DEFAULT NULL,
+  `strGUID` varchar(255) DEFAULT NULL,
+  `strSiteName` varchar(255) DEFAULT NULL,
+  `strURL` varchar(255) DEFAULT NULL,
   `bVerified` tinyint(4) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -99,13 +99,13 @@ CREATE TABLE `sitessettings` (
   `posHelper` tinyint(4) DEFAULT NULL,
   `animations` tinyint(4) DEFAULT NULL,
   `keyListener` tinyint(4) DEFAULT NULL,
-  `themeFile` varchar(100) DEFAULT NULL,
-  `allowFile` varchar(100) DEFAULT NULL,
+  `themeFile` varchar(255) DEFAULT NULL,
+  `allowFile` varchar(255) DEFAULT NULL,
   `allowThemeManager` tinyint(4) DEFAULT NULL,
   `allowLocalStorage` tinyint(4) DEFAULT NULL,
   `allowBottomLinks` tinyint(4) DEFAULT NULL,
   `allowShare` tinyint(4) DEFAULT NULL,
-  `dotSize` varchar(100) DEFAULT NULL,
+  `dotSize` varchar(255) DEFAULT NULL,
   `dotOutlineSize` int(11) DEFAULT NULL,
   `canvas` blob,
   `canvas.cornerRadius` int(11) DEFAULT NULL,
@@ -114,20 +114,20 @@ CREATE TABLE `sitessettings` (
   `canvas.stroke` tinyint(4) DEFAULT NULL,
   `canvas.shadow` tinyint(4) DEFAULT NULL,
   `canvas.theme` blob,
-  `canvas.theme.backgroundStyle` varchar(100) DEFAULT NULL,
-  `canvas.theme.backgroundColor` varchar(100) DEFAULT NULL,
+  `canvas.theme.backgroundStyle` varchar(255) DEFAULT NULL,
+  `canvas.theme.backgroundColor` varchar(255) DEFAULT NULL,
   `canvas.theme.strokeWidth` int(11) DEFAULT NULL,
-  `canvas.theme.strokeColor` varchar(100) DEFAULT NULL,
+  `canvas.theme.strokeColor` varchar(255) DEFAULT NULL,
   `canvas.theme.shadowOffsetX` int(11) DEFAULT NULL,
   `canvas.theme.shadowOffsetY` int(11) DEFAULT NULL,
   `canvas.theme.shadowBlur` int(11) DEFAULT NULL,
-  `canvas.theme.shadowColor` varchar(100) DEFAULT NULL,
+  `canvas.theme.shadowColor` varchar(255) DEFAULT NULL,
   `tooltip` tinyint(4) DEFAULT NULL,
-  `tooltipOrientation` varchar(100) DEFAULT NULL,
+  `tooltipOrientation` varchar(255) DEFAULT NULL,
   `tooltipURL` tinyint(4) DEFAULT NULL,
-  `altImageSrc` varchar(100) DEFAULT NULL,
-  `activeParentClass` varchar(100) DEFAULT NULL,
-  `activeChildClass` varchar(100) DEFAULT NULL,
+  `altImageSrc` varchar(255) DEFAULT NULL,
+  `activeParentClass` varchar(255) DEFAULT NULL,
+  `activeChildClass` varchar(255) DEFAULT NULL,
   `custom` blob,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -135,10 +135,10 @@ CREATE TABLE `sitessettings` (
 DROP TABLE IF EXISTS `tags`;
 CREATE TABLE `tags` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strGUID` varchar(36) DEFAULT NULL,
-  `strTagName` varchar(256) DEFAULT NULL,
-  `strWebLink` varchar(256) DEFAULT NULL,
-  `strWebReferer` varchar(256) DEFAULT NULL,
+  `strGUID` varchar(255) DEFAULT NULL,
+  `strTagName` varchar(255) DEFAULT NULL,
+  `strWebLink` varchar(255) DEFAULT NULL,
+  `strWebReferer` varchar(255) DEFAULT NULL,
   `strKeywordsMap` blob,
   `nPosX` decimal(10,10) DEFAULT NULL,
   `nPosY` decimal(10,10) DEFAULT NULL,
@@ -146,7 +146,7 @@ CREATE TABLE `tags` (
   `nSitesID` int(11) DEFAULT NULL,
   `nTaggerAccountsID` int(11) DEFAULT NULL,
   `nUserAgentsID` int(11) DEFAULT NULL,
-  `strIpAddress` varchar(15) DEFAULT NULL,
+  `strIpAddress` varchar(255) DEFAULT NULL,
   `dateCreated` timestamp NULL DEFAULT NULL,
   `bApproved` tinyint(4) DEFAULT 0,
   `bDeleted` tinyint(4) DEFAULT 0,
@@ -157,7 +157,7 @@ DROP TABLE IF EXISTS `tagslog`;
 CREATE TABLE `tagslog` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nTagsID` int(11) DEFAULT NULL,
-  `strClickerIP` varchar(15) DEFAULT NULL,
+  `strClickerIP` varchar(255) DEFAULT NULL,
   `nUserAgentsID` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -170,9 +170,9 @@ CREATE TABLE `clicklog` (
   `nSiteClickedFromID` int(11) DEFAULT NULL,
   `nSiteClickedToID` int(11) DEFAULT NULL,
   `nUserAgentsID` int(11) DEFAULT NULL,
-  `strWebLink` varchar(256) DEFAULT NULL,
-  `strWebReferer` varchar(256) DEFAULT NULL,
-  `strClickerIP` varchar(15) DEFAULT NULL,
+  `strWebLink` varchar(255) DEFAULT NULL,
+  `strWebReferer` varchar(255) DEFAULT NULL,
+  `strClickerIP` varchar(255) DEFAULT NULL,
   `dateClicked` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -180,7 +180,7 @@ CREATE TABLE `clicklog` (
 DROP TABLE IF EXISTS `useragents`;
 CREATE TABLE `useragents` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `strAgentHash` varchar(32) DEFAULT NULL,
+  `strAgentHash` varchar(255) DEFAULT NULL,
   `strUserAgent` blob,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
