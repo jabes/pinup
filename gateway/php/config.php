@@ -18,10 +18,10 @@ define("CLASS_FILE_LOCATION", DOCUMENT_ROOT . "/php/classes/%s.class.php");
 define("DEVMODE", false); # warning: if true, frontend will stop working
 define("ALLOW_MEMCACHE", false);
 
-define('MYSQL_HOST', "127.0.0.1");
-define('MYSQL_USER', "root");
-define('MYSQL_PASS', "root");
-define('MYSQL_DB', "pinup");
+define('MYSQL_HOST', getenv('MYSQL_HOST'));
+define('MYSQL_USER', getenv('MYSQL_USER'));
+define('MYSQL_PASS', getenv('MYSQL_PASS'));
+define('MYSQL_DB', getenv('MYSQL_DB'));
 
 define('MAINSITE_URL', "http://" . SYS_DOMAIN . "/"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
