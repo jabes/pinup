@@ -7,7 +7,7 @@ all files accessed from the frontend must pass through this file
 
 **/
 
-header("content-type:text/plain");
+header('Content-Type: application/javascript');
 require_once dirname(__FILE__) . "/php/header.php";
 
 try {
