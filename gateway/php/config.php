@@ -7,7 +7,7 @@ define('SYS_VERSION', "2.02"); # same as JS script version on CDN
 define('SYS_NAME', "Pinup");
 define('SYS_DOMAIN', $host); # reliant domain name used within system
 define('SYS_MYSQL_PORT', 3306);
-define('SYS_WEBURL', "http://" . SYS_DOMAIN . "/gateway"); # reliant web url (backend: used in system connections)
+define('SYS_WEBURL', "https://" . SYS_DOMAIN . "/gateway"); # reliant web url (backend: used in system connections)
 define('SYS_AGENT', SYS_NAME . "/Hub/v-" . SYS_VERSION);
 define('SYS_POSTMASTER_EMAIL', "bull.justin@gmail.com");
 
@@ -23,7 +23,7 @@ define('MYSQL_USER', getenv('MYSQL_USER'));
 define('MYSQL_PASS', getenv('MYSQL_PASSWORD'));
 define('MYSQL_DB', getenv('MYSQL_DATABASE'));
 
-define('MAINSITE_URL', "http://" . SYS_DOMAIN . "/"); # unreliant web url (frontend: used in contact info)
+define('MAINSITE_URL', "https://" . SYS_DOMAIN . "/"); # unreliant web url (frontend: used in contact info)
 define('JSONP_RETURN_METHOD', SYS_NAME . ".jsonpHandler['%s'](%s);");
 define('SITE_VERIFY_METAKEY', strtolower(SYS_NAME) . "-site-verification");
 
