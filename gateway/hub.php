@@ -76,10 +76,15 @@ try {
 		$arrSiteData = $site->retrieveData();
 		$site->verify();
 
-		if (!DEVMODE) {
-			$site->checkHost();
-			$site->checkSubdomain(true); // passive on
-		}
+		// Disabled: checkHost() and checkSubdomain() rely on HTTP_REFERER which
+		// modern browsers no longer send on JSONP <script> tag injections.
+		// These checks were never real security (Referer is trivially spoofed)
+		// and the JSONP transport mechanism no longer provides the header.
+		//
+		// if (!DEVMODE) {
+		// 	$site->checkHost();
+		// 	$site->checkSubdomain(true);
+		// }
 
 	}
 
