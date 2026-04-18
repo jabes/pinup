@@ -60,7 +60,7 @@ try {
 	if (DEVMODE) print_r($e); else echo $e->getMessage();
 }
 
-if (substr($arrTagInfo['strWebLink'], 0, 4) !== "http") $arrTagInfo['strWebLink'] = "http://" . $arrTagInfo['strWebLink'];
+if (substr($arrTagInfo['strWebLink'], 0, 4) !== "http") $arrTagInfo['strWebLink'] = "https://" . $arrTagInfo['strWebLink'];
 
 ?><!DOCTYPE html>
 <html>
